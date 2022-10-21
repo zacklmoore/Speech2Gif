@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Speech2Gif</title>
+  </head>
+  <body>
+    <script src="keyword_extractor.js"></script>
+    <script src="token.js"></script>
+    <script src="index.js"></script>
+    <h1 id="header" style="cursor: pointer;">Speech2Gif</h1>
+    <button id="start" onclick="startClick()">Start</button>
+    <div>
+        <br/>
+        <span><b>Current Phrase:</b></span>
+        <p id="interim" style="font-style: italic;">Waiting to start...</p>
+        <span><b>Results:</b></span>
+        <button id="clear" onclick="clearClick()">Clear</button>
+        <br/>
+        <br/>
+        <div id="nodes" style="background: lightgray; border-radius: 10px; padding: 10px;">
+          <!-- Will be filled -->
+        </div>
+    </div>
+  </body>
+</html>
